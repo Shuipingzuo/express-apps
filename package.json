@@ -1,0 +1,26 @@
+{
+  "name": "express-apps",
+  "version": "0.1.0",
+  "description": "express-apps",
+  "main": "app.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shuipingzuo/express-apps.git"
+  },
+  "keywords": [
+    "express",
+    "express-app"
+  ],
+  "author": "gavinning",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Shuipingzuo/express-apps/issues"
+  },
+  "homepage": "https://github.com/Shuipingzuo/express-apps#readme",
+  "dependencies": {
+    "getapp": "^0.1.0"
+  }
+}
