@@ -1,6 +1,6 @@
 express-apps
 ---
-为express提供子系统加载功能
+为express提供子系统注册服务
 
 ### Install
 ```js
