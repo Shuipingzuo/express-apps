@@ -9,10 +9,7 @@ class App {
 
     reg(system, url) {
         getapp.config.set('cwd', url)
-        getapp
-            .getAll()
-            .then(apps => apps.forEach(app => app.reg(system)))
-
+        getapp.getAll().forEach(app => app.reg(system))
         return (req, res, next) => next()
     }
 }
