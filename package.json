@@ -21,6 +21,6 @@
   },
   "homepage": "https://github.com/Shuipingzuo/express-apps#readme",
   "dependencies": {
-    "getapp": "^0.1.0"
+    "getapp": "^0.3.0"
   }
 }

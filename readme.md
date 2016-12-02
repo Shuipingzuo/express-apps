@@ -1,6 +1,7 @@
 express-apps
 ---
-为express提供子系统注册服务
+为express提供子系统注册服务  
+依赖 [getapp](https://github.com/Shuipingzuo/getapp)
 
 ### Install
 ```js
