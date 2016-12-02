@@ -7,15 +7,39 @@ express-apps
 npm i express-apps --save
 ```
 
-### Usage
+### Usage For Express
+为基于express实现的后台提供子系统注册
 ```js
 const app = express()
-const apps = require('express-apps')
+const App = require('express-apps')
 
-app.use(apps.reg(app, path.join(__dirname, 'apps')))
+app.set('apps.path', '/g');
+app.set('apps.static', '/g/static');
+app.use(App.reg(app, path.join(__dirname, 'apps')))
 ```
 
-### Class
+### Usage For Express-apps
+开发基于express-apps的子系统
 ```js
-const Apps = apps.Apps
+const path = require('path')
+const App = require('express-apps')
+
+class Stats extends App {
+    constructor(parent){
+        super(parent)
+        this.name = 'stats'
+    }
+
+    reg() {
+        this.routes()
+        this.static(path.join(__dirname, 'static'))
+    }
+
+    routes(routes) {
+        this.router
+            .get('/', (req, res) => res.send(`Hello ${this.name}`))
+    }
+}
+
+module.exports = Stats
 ```
