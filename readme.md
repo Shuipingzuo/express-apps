@@ -32,6 +32,7 @@ class Stats extends App {
     }
 
     reg() {
+        this.init()
         this.routes()
         this.static(path.join(__dirname, 'static'))
     }
